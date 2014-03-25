@@ -414,12 +414,12 @@ add_filter( "single_template", "get_vt_vtstaff_post_type_template" ) ;
 			)
 	);
 	
+	wp_register_script( 'jquery_min_js',  'http://code.jquery.com/jquery-1.8.3.min.js');
+	wp_enqueue_script('jquery_min_js');
+
 	wp_register_style( 'vtstaffcss',  plugins_url( 'assets/staff.css', __FILE__ ));
 	wp_enqueue_style('vtstaffcss');
 
-	// wp_register_script( 'jquery_min_js',  'http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js');
-	// wp_enqueue_script('jquery_min_js');
-	
 	wp_register_style( 'foundation_min', plugins_url( 'assets/foundation-icons.css', __FILE__ ));
 	wp_enqueue_style('foundation_min');
 	

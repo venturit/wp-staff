@@ -1,0 +1,66 @@
+.staff_hr {
+	border: 0;
+	height: 1px;
+	background: #333;
+	background: -webkit-gradient(linear, left top, right top, color-stop(0%,hsla(0,0%,0%,0)), color-stop(50%,hsla(0,0%,0%,.75)), color-stop(100%,hsla(0,0%,0%,0)));
+	background: -webkit-linear-gradient(left, hsla(0,0%,0%,0) 0%, hsla(0,0%,0%,.75) 50%, hsla(0,0%,0%,0) 100%);
+	background: -moz-linear-gradient(left, hsla(0,0%,0%,0) 0%, hsla(0,0%,0%,.75) 50%, hsla(0,0%,0%,0) 100%);
+	background: -ms-linear-gradient(left, hsla(0,0%,0%,0) 0%, hsla(0,0%,0%,.75) 50%, hsla(0,0%,0%,0) 100%);
+	background: -o-linear-gradient(left, hsla(0,0%,0%,0) 0%, hsla(0,0%,0%,.75) 50%, hsla(0,0%,0%,0) 100%);
+	background:
+}
+
+.staff_vision {
+	font-size: 12px;
+	background-color: rgba(0, 0, 0, 0.05);
+	padding: 20px 20px 20px 70px;
+}
+
+.staff_thumbnail {
+	border-radius: 1000px;
+	box-shadow: 0 0 0 1px #0BB697;
+	display: inline-block;
+	overflow: hidden;
+}
+
+.vt-toggle-title:before {
+	color: #ADADAD;
+	display: block;
+	font-size: 12px;
+	left: -4px;
+	line-height: 12px;
+	padding: 3px 6px 2px;
+	position: absolute;
+	top: 11px;
+}
+.vt-toggle-title {
+	font-size: 12px;
+	cursor:pointer;
+}
+.vt-toggle-pane {
+	font-size: 12px; background-color: rgba(0, 0, 0, 0.05); padding: 20px 20px 20px 70px;
+	display: none;
+}
+.st_title {
+	color: #2F473D;
+	font-size: 24px;
+	margin-bottom: 18px;
+	margin-top: 0;
+	text-align: left;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+.st_designation {
+	color: #51803B;
+	font-weight: bold;
+	font-size: 100%;
+	text-align: left;
+}
+
+.st-post-meta {
+	list-style-type:none;
+}
+.post-meta-span-deta {
+	margin-left: 6px;
+}

@@ -414,8 +414,8 @@ add_filter( "single_template", "get_vt_vtstaff_post_type_template" ) ;
 			)
 	);
 	
-	wp_register_script( 'jquery_min_js',  'http://code.jquery.com/jquery-1.8.3.min.js');
-	wp_enqueue_script('jquery_min_js');
+	// wp_register_script( 'jquery_min_js',  'http://code.jquery.com/jquery-1.8.3.min.js');
+	// wp_enqueue_script('jquery_min_js');
 
 	wp_register_style( 'vtstaffcss',  plugins_url( 'assets/staff.css', __FILE__ ));
 	wp_enqueue_style('vtstaffcss');

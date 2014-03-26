@@ -63,7 +63,7 @@ function staff_func( $atts ) {
 					<p class='vt-toggle-pane'>".$president_result[0]->post_content."</p>
 				</div>
 			</div>
-		</div>";
+		</div><span class='show-for-small'><hr class='staff_hr'></span>";
 	}
 
 		
@@ -105,7 +105,7 @@ if ($spicy_results):
 							<p class='vt-toggle-pane'>".$portfolios_post->post_content."</p>
 						</div>
 					</div>
-				</div>";
+				</div><span class='show-for-small'><hr class='staff_hr'></span>";
 			}else{
 				$output .= "<div class='large-6 medium-6 columns'>
 					<div class='row'>

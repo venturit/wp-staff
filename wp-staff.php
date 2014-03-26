@@ -414,17 +414,18 @@ add_filter( "single_template", "get_vt_vtstaff_post_type_template" ) ;
 			)
 	);
 	
-	wp_register_script( 'jquery_js',  plugins_url( 'assets/jquery.js', __FILE__ ));
-	wp_enqueue_script('jquery_js');
+	function wp_staff_scripts() {
+		wp_register_style( 'vtstaffcss',  plugins_url( 'assets/staff.css', __FILE__ ));
+		wp_enqueue_style('vtstaffcss');
 
-	wp_register_style( 'vtstaffcss',  plugins_url( 'assets/staff.css', __FILE__ ));
-	wp_enqueue_style('vtstaffcss');
+		wp_register_style( 'foundation_min', plugins_url( 'assets/foundation-icons.css', __FILE__ ));
+		wp_enqueue_style('foundation_min');
 
-	wp_register_style( 'foundation_min', plugins_url( 'assets/foundation-icons.css', __FILE__ ));
-	wp_enqueue_style('foundation_min');
-	
 
-	wp_register_script( 'vtstaffjs',  plugins_url( 'assets/staff.js', __FILE__ ));
-	wp_enqueue_script('vtstaffjs');
-	
+		wp_register_script( 'vtstaffjs',  plugins_url( 'assets/staff.js', __FILE__ ), array(), '1.0.0', true);
+		wp_enqueue_script('vtstaffjs');
+	}
+
+	add_action( 'wp_enqueue_scripts', 'wp_staff_scripts' );
+
 ?>

@@ -1,5 +1,4 @@
 $(document).ready(function () {
-	// alert("working");
 	$(".vt-toggle-title").click(function(){
 		$(this).siblings('.vt-toggle-pane').toggle(
 			function () {
@@ -10,5 +9,4 @@ $(document).ready(function () {
 				$(this).siblings('.vt-toggle-pane').slideUp(200);
 			});
 	});
-
-})
+});

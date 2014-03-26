@@ -38,14 +38,14 @@ function staff_func( $atts ) {
 		$president_profile_id = $president_result[0]->ID;
 
 		$output .= "<div class='row'>";
-		$output .= "<div class='small-6 columns'>
+		$output .= "<div class='large-6 medium-6 columns'>
 			<div class='row'>
-				<div class='small-4 columns'>
+				<div class='large-4 columns'>
 					<figure>
 						<a href='". post_permalink( $president_profile_id ) ."' rel='bookmark'><span class='staff_thumbnail'>". get_the_post_thumbnail($president_profile_id, array(9999, 220)) ."</span></a>
 					</figure>
 				</div>
-				<div class='small-8 columns'>
+				<div class='large-8 columns'>
 					<span><a href='". post_permalink( $president_profile_id ) ."' rel='bookmark'><h4><span class='st_title'>" . get_post_meta( $president_profile_id, 'vt_fname', true )." " .get_post_meta( $president_profile_id, 'vt_lname', true ). "</span></h4></a><p class='st_designation'>". $president_result[0]->post_title ."</p></span>
 				<br/ >
 				<ul>
@@ -59,7 +59,7 @@ function staff_func( $atts ) {
 			</div>
 			<div class='row'>
 				<div class='large-12 columns'>
-					<span class='vt-toggle-title'><i class='fi-folder small'><span class='post-meta-span-deta'>About Me</span></i></span><br /><br />
+					<span class='vt-toggle-title'><i class='fi-info small'><span class='post-meta-span-deta'>About Me</span></i></span><br /><br />
 					<p class='vt-toggle-pane'>".$president_result[0]->post_content."</p>
 				</div>
 			</div>
@@ -80,14 +80,14 @@ if ($spicy_results):
 			$i += 1;
 			if($i ==1 ){
 				$output .= "<div class='row'>";
-				$output .= "<div class='small-6 columns'>
+				$output .= "<div class='large-6 medium-6 columns'>
 					<div class='row'>
-						<div class='small-4 columns'>
+						<div class='large-4 columns'>
 							<figure>
 								<a href='". post_permalink( $portfolios_post->ID ) ."' rel='bookmark'><span class='staff_thumbnail'>". get_the_post_thumbnail($portfolios_post->ID, array(9999, 220)) ."</span></a>
 							</figure>
 						</div>
-						<div class='small-8 columns'>
+						<div class='large-8 columns'>
 							<span><a href='". post_permalink( $portfolios_post->ID ) ."' rel='bookmark'><h4><span class='st_title'>" . get_post_meta( $portfolios_post->ID, 'vt_fname', true )." " .get_post_meta( $portfolios_post->ID, 'vt_lname', true ). "</span></h4></a><p class='st_designation'>". $portfolios_post->post_title ."</p></span>
 						<br/ >
 						<ul>
@@ -101,20 +101,20 @@ if ($spicy_results):
 					</div>
 					<div class='row'>
 						<div class='large-12 columns'>
-							<span class='vt-toggle-title'><i class='fi-folder small'><span class='post-meta-span-deta'>About Me</span></i></span><br /><br />
+							<span class='vt-toggle-title'><i class='fi-info small'><span class='post-meta-span-deta'>About Me</span></i></span><br /><br />
 							<p class='vt-toggle-pane'>".$portfolios_post->post_content."</p>
 						</div>
 					</div>
 				</div>";
 			}else{
-				$output .= "<div class='small-6 columns'>
+				$output .= "<div class='large-6 medium-6 columns'>
 					<div class='row'>
-						<div class='small-4 columns'>
+						<div class='large-4 columns'>
 							<figure>
 								<a href='". post_permalink( $portfolios_post->ID ) ."' rel='bookmark'><span class='staff_thumbnail'>". get_the_post_thumbnail($portfolios_post->ID, array(9999, 220)) ."</span></a>
 							</figure>
 						</div>
-						<div class='small-8 columns'>
+						<div class='large-8 columns'>
 							<span><a href='". post_permalink( $portfolios_post->ID ) ."' rel='bookmark'><h4><span class='st_title'>" . get_post_meta( $portfolios_post->ID, 'vt_fname', true )." " .get_post_meta( $portfolios_post->ID, 'vt_lname', true ). "</span></h4></a><p class='st_designation'>". $portfolios_post->post_title ."</p></span>
 							<br/ >
 							<ul>
@@ -128,7 +128,7 @@ if ($spicy_results):
 					</div>
 					<div class='row'>
 						<div class='large-12 columns'>
-							<span class='vt-toggle-title'><i class='fi-folder small'><span class='post-meta-span-deta'>About Me</span></i></span><br /><br />
+							<span class='vt-toggle-title'><i class='fi-info small'><span class='post-meta-span-deta'>About Me</span></i></span><br /><br />
 							<p class='vt-toggle-pane'>".$portfolios_post->post_content."</p>
 						</div>
 					</div>
@@ -380,7 +380,7 @@ function get_rendom_member() {
 		$output .= "<div class='row'>";
 		foreach ($spicy_results as $portfolios_post) :
 			setup_postdata($portfolios_post);
-			$output .= "<div class='small-12 columns'>
+			$output .= "<div class='large-12 columns'>
 				<div>
 					<a href='". post_permalink( $portfolios_post->ID ) ."' rel='bookmark'><h4>" . $portfolios_post->post_title . "</h4></a>
 				</div>

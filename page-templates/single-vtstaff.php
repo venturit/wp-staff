@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-	<div class="small-12 large-8 columns" id="content" role="main">
+	<div class="small-12 large-12 columns" id="content" role="main">
 	
 	<?php /* Start loop */ ?>
 	<?php while (have_posts()) : the_post(); ?>
@@ -23,6 +23,6 @@
 	<?php endwhile; // End the loop ?>
 
 	</div>
-	<?php get_sidebar(); ?>
+	<?php // get_sidebar(); ?>
 		
 <?php get_footer(); ?>
